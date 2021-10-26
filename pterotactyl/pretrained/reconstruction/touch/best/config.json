@@ -1,0 +1,15 @@
+{
+    "seed": 3,
+    "limit_data": true,
+    "epochs": 1000,
+    "lr": 1e-05,
+    "eval": false,
+    "batch_size": 32,
+    "num_samples": 4000,
+    "patience": 70,
+    "loss_coeff": 9000.0,
+    "exp_id": "touch_27",
+    "exp_type": "touch_train",
+    "debug": false,
+    "check_point": "/private/home/ejsmith/projects/active/ActiveTouch/pterotactyl/reconstruction/touch/experiments/checkpoint/touch_train/touch_27"
+}
