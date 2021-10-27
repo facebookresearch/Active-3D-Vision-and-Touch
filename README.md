@@ -40,7 +40,7 @@ conda install -c bottler nvidiacub
 conda install pytorch3d -c pytorch3d
 ```
 
-If you are having trouble setting up this envrionment I recommend following the PyTorch3D instillation code found [here](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md).  
+If you are having trouble setting up this envrionment I recommend following the PyTorch3D installation code found [here](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md).  
 
 - Install dependencies
 ```bash
