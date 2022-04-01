@@ -51,6 +51,7 @@ $ pip install -r requirements.txt
 ```bash
 $ python setup.py develop
 ```
+- If you are having trouble rendering using pyrender it is very possibly that the update sugggested [here](https://github.com/mcfletch/pyopengl/issues/27) will solve your issue.
 
 ### Dataset
 To download the dataset call the following, keep in mind this will take some time (~30 mins) to download and unpack:
