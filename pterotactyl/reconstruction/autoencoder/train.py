@@ -259,7 +259,8 @@ class Engine:
                     )
 
             # define the vision model
-            vision_args, weights = utils.load_model_config(location_vision)
+            vision_args, _ = utils.load_model_config(location_vision)
+            weights = location_vision + 'model'
             self.mesh_info, self.initial_mesh = utils.load_mesh_vision(
                 vision_args, self.vision_chart_location
             )
@@ -275,7 +276,9 @@ class Engine:
             self.deform.eval()
 
             # define the autoencoder model
-            auto_args, weights = utils.load_model_config(location_auto)
+
+            auto_args, _ = utils.load_model_config(location_auto)
+            weights = location_auto + '/model'
             self.auto_encoder = model.AutoEncoder(
                 self.mesh_info, self.initial_mesh, auto_args
             )

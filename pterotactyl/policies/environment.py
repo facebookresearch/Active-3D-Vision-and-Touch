@@ -108,13 +108,15 @@ class ActiveTouch:
         self.touch_verts, _ = utils.load_mesh_touch(self.touch_chart_location)
 
         # load predtrained touch prediction model
-        touch_args, weights = utils.load_model_config(self.args.touch_location)
+        touch_args, _ = utils.load_model_config(self.args.touch_location)
+        weights = self.args.touch_location + '/model'
         self.touch_prediction = touch_model.Encoder().cuda()
         self.touch_prediction.load_state_dict(torch.load(weights))
         self.touch_prediction.eval()
 
         # load predtrained vision prediction model
-        vision_args, weights = utils.load_model_config(self.args.vision_location)
+        vision_args, _ = utils.load_model_config(self.args.vision_location)
+        weights = self.args.vision_location + '/model'
         self.mesh_info, self.initial_mesh = utils.load_mesh_vision(
             vision_args, self.vision_chart_location
         )
@@ -128,7 +130,9 @@ class ActiveTouch:
 
         # load predtrained autoencoder model
         if self.args.use_latent:
-            auto_args, weights = utils.load_model_config(self.args.auto_location)
+            auto_args, _ = utils.load_model_config(self.args.auto_location)
+            weights = self.args.auto_location + '/model'
+
             self.auto_encoder = auto_model.AutoEncoder(
                 self.mesh_info, self.initial_mesh, auto_args, only_encode=True
             ).cuda()

@@ -14,7 +14,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="/private/home/ejsmith/projects/active/ActiveTouch/pterotactyl/objects/test_objects/0.obj.obj" scale="1 1 1" />
+        <mesh filename="/private/home/ejsmith/projects/active/checkActive/Active-3D-Vision-and-Touch/pterotactyl/objects/test_objects/0.obj.obj" scale="1 1 1" />
       </geometry>
        <material name="red">
         <color rgba="1 0.4 0.4 1" />
@@ -23,7 +23,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-	 	<mesh filename="/private/home/ejsmith/projects/active/ActiveTouch/pterotactyl/objects/test_objects/0.obj.obj" scale="1 1 1" />
+	 	<mesh filename="/private/home/ejsmith/projects/active/checkActive/Active-3D-Vision-and-Touch/pterotactyl/objects/test_objects/0.obj.obj" scale="1 1 1" />
       </geometry>
     </collision>
   </link>

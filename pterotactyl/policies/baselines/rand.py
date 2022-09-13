@@ -122,14 +122,14 @@ if __name__ == "__main__":
     parser.add_argument(
         "--touch_location",
         type=str,
-        default=os.path.dirname(pretrained.__file__) + "/reconstruction/touch/best/",
+        default=os.path.dirname(pretrained.__file__) + "/reconstruction/touch/best",
         help="the location of the touch part prediction.",
     )
     parser.add_argument(
         "--vision_location",
         type=str,
         default=os.path.dirname(pretrained.__file__) + "/reconstruction/vision/t_p/",
-        help="the location of the touch part prediction.",
+        help="the location of the vision part prediction.",
     )
     parser.add_argument(
         "--number_points",

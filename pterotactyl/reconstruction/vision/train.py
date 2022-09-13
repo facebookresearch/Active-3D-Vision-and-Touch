@@ -239,7 +239,9 @@ class Engine(Checkpointable):
                         + "/reconstruction/vision/t_g/"
                     )
 
-            vision_args, weights = utils.load_model_config(location)
+            vision_args, _ = utils.load_model_config(location)
+            weights = location + 'model'
+
             self.mesh_info, self.initial_mesh = utils.load_mesh_vision(
                 vision_args, self.vision_chart_location
             )
